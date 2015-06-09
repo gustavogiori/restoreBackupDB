@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace RestoreBackupDB.OperacoesForm
+{
+    public partial class frmOperacoes : Form
+    {
+        public frmOperacoes()
+        {
+            InitializeComponent();
+        }
+
+        private void btnLocalBackup_Click(object sender, EventArgs e)
+        {
+            RegraNegocio.clsUtil util = new RegraNegocio.clsUtil();
+            txtCaminhoBackup.Text = util.salvarArquivo(".bak", "Restauração de base", "Arquivo Backup|*.bak*|Todos Arquivos|*.*",cmbDatabase.Text);
+        }
+
+        private void frmOperacoes_Load(object sender, EventArgs e)
+        {
+            RegraNegocio.clsConfiguracao config = new RegraNegocio.clsConfiguracao();
+            config.listarBases(cmbDatabase);
+        }
+
+        private void btnExecutar_Click(object sender, EventArgs e)
+        {
+            RegraNegocio.clsConfiguracao config = new RegraNegocio.clsConfiguracao();
+            RegraNegocio.clsUtil util = new RegraNegocio.clsUtil();
+            List<Control> lst = new List<Control>();
+            lst.Add(txtCaminhoBackup);
+            lst.Add(cmbDatabase);
+
+            if (util.verificarNulo(errorProvider1,lst)!= true)
+            {
+              frmOperacoes frm = new frmOperacoes();
+              config.realizarBackUp(progress,cmbDatabase, txtCaminhoBackup.Text, label4, frm);
+            }
+
+            else
+            {
+                
+            }
+        }
+
+        private void btnArquivo_Click(object sender, EventArgs e)
+        {
+            RegraNegocio.clsUtil util = new RegraNegocio.clsUtil();
+            txtArquivo.Text = util.abrirDialigoArquivo("Arquivo Backup|*.bak| Todos arquivos|*.*", "Restauração");
+        }
+
+        private void btnExecutarRestauracap_Click(object sender, EventArgs e)
+        {
+            RegraNegocio.clsUtil util = new RegraNegocio.clsUtil();
+            List<Control> lst = new List<Control>();
+            lst.Add(txtArquivo);
+            lst.Add(txtNomeBase);
+
+            if (util.verificarNulo(errorProvider1, lst))
+            {
+
+            }
+            else
+            {
+              frmOperacoes frm = new frmOperacoes();
+                RegraNegocio.clsConfiguracao config = new RegraNegocio.clsConfiguracao();
+                config.realizarRestauracao(progress, txtNomeBase, txtArquivo.Text,label4,frm);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RegraNegocio.clsUtil util = new RegraNegocio.clsUtil();
+            List<Control> lst = new List<Control>();
+
+            lst.Add(txtArquivo);
+            lst.Add(txtCaminhoBackup);
+            lst.Add(txtNomeBase);
+            lst.Add(cmbDatabase);
+            if (util.verificarNulo(errorProvider1, lst))
+            {
+                MessageBox.Show("Ainda há");
+            }
+
+            else
+            {
+                MessageBox.Show("não mais");
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.config
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.pdb
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csprojResolveAssemblyReference.cache
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.frmHome.resources
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.Properties.Resources.resources
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csproj.GenerateResource.Cache
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.pdb
+c:\users\gustavo giori\documents\visual studio 2013\Projects\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.OperacoesForm.frmOperacoes.resources
+E:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.config
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.pdb
+E:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe
+E:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.pdb
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csprojResolveAssemblyReference.cache
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.frmHome.resources
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.OperacoesForm.frmOperacoes.resources
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.Properties.Resources.resources
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csproj.GenerateResource.Cache
+D:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.config
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.pdb
+D:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe
+D:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.pdb
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csprojResolveAssemblyReference.cache
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.frmHome.resources
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.OperacoesForm.frmOperacoes.resources
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.Properties.Resources.resources
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csproj.GenerateResource.Cache
+E:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.manifest
+E:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.application
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe.manifest
+E:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.application
+D:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.manifest
+D:\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.application
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe.manifest
+D:\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.application
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.config
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.pdb
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.manifest
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.application
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.pdb
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csprojResolveAssemblyReference.cache
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.frmHome.resources
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.OperacoesForm.frmOperacoes.resources
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.Properties.Resources.resources
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.csproj.GenerateResource.Cache
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe.manifest
+C:\Users\gustavo.giori\Desktop\pendrive\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.application
+C:\Users\Gustavo Giori\Downloads\pastas_zipadas\RestoreBackupDB\RestoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe.config
+C:\Users\Gustavo Giori\Downloads\pastas_zipadas\RestoreBackupDB\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe
+C:\Users\Gustavo Giori\Downloads\pastas_zipadas\RestoreBackupDB\RestoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.pdb
