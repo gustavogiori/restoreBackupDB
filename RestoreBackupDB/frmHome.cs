@@ -52,7 +52,10 @@ namespace RestoreBackupDB
                     if (config.conectarServidor(cbServer, cbAutenticacao, txtLogin, txtSenha))
                     {
                         OperacoesForm.frmOperacoes frm = new OperacoesForm.frmOperacoes();
+                        this.Hide();
                         frm.ShowDialog();
+
+                       
                     }
                 }
             }
@@ -62,9 +65,15 @@ namespace RestoreBackupDB
                 if (config.conectarServidor(cbServer, cbAutenticacao, txtLogin, txtSenha))
                 {
                     OperacoesForm.frmOperacoes frm = new OperacoesForm.frmOperacoes();
+                    this.Hide();
                     frm.ShowDialog();
                 }
             }
+        }
+
+        private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

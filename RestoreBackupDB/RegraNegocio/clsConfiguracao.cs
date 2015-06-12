@@ -101,12 +101,13 @@ GRANT SELECT ON GSERVICO TO sysdba;
 GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
 GRANT SELECT,INSERT ON GDATALOG TO sysdba;
 ";
-            db.ExecuteWithResults(parte1);
+    var teste=        db.ExecuteWithResults(parte1);
             db.ExecuteWithResults(parte2);
             db.ExecuteWithResults(parte3);
             db.ExecuteWithResults(parte4);
             db.ExecuteWithResults(parte5);
             db.ExecuteWithResults(parte6);
+          
         }
 
         public void AcertaUsuario2008(string baseExecutar)
@@ -144,12 +145,15 @@ GRANT SELECT ON GSERVICO TO sysdba;
 GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
 GRANT SELECT,INSERT ON GDATALOG TO sysdba;
 ";
-            db.ExecuteWithResults(parte1);
-            db.ExecuteWithResults(parte2);
+           var teste= db.ExecuteWithResults(parte1);
+
+           var teste2 = db.ExecuteWithResults(parte2);
             db.ExecuteWithResults(parte3);
             db.ExecuteWithResults(parte4);
             db.ExecuteWithResults(parte5);
             db.ExecuteWithResults(parte6);
+
+          
         }
 
 

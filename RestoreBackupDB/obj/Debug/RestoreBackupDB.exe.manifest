@@ -139,14 +139,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestoreBackupDB.exe" size="76288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestoreBackupDB.exe" size="134144">
       <assemblyIdentity name="RestoreBackupDB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>em0m2yb8UNCOsWKTQXkRkQifOUxsqPsu+VRKN8HmNzM=</dsig:DigestValue>
+        <dsig:DigestValue>EW5biPNthG/NoHNTlWsGvhCnqqQRk0dKTrJkJut8Igo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
