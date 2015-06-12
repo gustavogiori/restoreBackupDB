@@ -57,20 +57,29 @@ namespace RestoreBackupDB.OperacoesForm
 
         private void btnExecutarRestauracap_Click(object sender, EventArgs e)
         {
-            RegraNegocio.clsUtil util = new RegraNegocio.clsUtil();
-            List<Control> lst = new List<Control>();
-            lst.Add(txtArquivo);
-            lst.Add(txtNomeBase);
-
-            if (util.verificarNulo(errorProvider1, lst))
+            try
             {
 
+                RegraNegocio.clsUtil util = new RegraNegocio.clsUtil();
+                List<Control> lst = new List<Control>();
+                lst.Add(txtArquivo);
+                lst.Add(txtNomeBase);
+
+                if (util.verificarNulo(errorProvider1, lst))
+                {
+
+                }
+                else
+                {
+                    frmOperacoes frm = new frmOperacoes();
+                    RegraNegocio.clsConfiguracao config = new RegraNegocio.clsConfiguracao();
+                    config.realizarRestauracao(progress, txtNomeBase, txtArquivo.Text, label4, frm, checkAcertaUsuario, checkVersao);
+                }
             }
-            else
+
+            catch (Exception ex)
             {
-              frmOperacoes frm = new frmOperacoes();
-                RegraNegocio.clsConfiguracao config = new RegraNegocio.clsConfiguracao();
-                config.realizarRestauracao(progress, txtNomeBase, txtArquivo.Text,label4,frm);
+                MessageBox.Show(ex.Message,"Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
@@ -92,6 +101,21 @@ namespace RestoreBackupDB.OperacoesForm
             {
                 MessageBox.Show("não mais");
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            frmOperacoes frm = new frmOperacoes();
+            RegraNegocio.clsConfiguracao config = new RegraNegocio.clsConfiguracao();
+
+            config.verificarVersao();
+        }
+
+        private void cmbDatabase_Click(object sender, EventArgs e)
+        {
+            RegraNegocio.clsConfiguracao config = new RegraNegocio.clsConfiguracao();
+           
+            config.listarBases(cmbDatabase);
         }
     }
 }
