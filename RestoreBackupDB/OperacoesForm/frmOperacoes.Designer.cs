@@ -138,7 +138,7 @@
             this.groupBox2.Controls.Add(this.btnArquivo);
             this.groupBox2.Location = new System.Drawing.Point(388, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(511, 159);
+            this.groupBox2.Size = new System.Drawing.Size(497, 159);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Restauração";
@@ -231,14 +231,14 @@
             // 
             this.progress.Location = new System.Drawing.Point(1, 239);
             this.progress.Name = "progress";
-            this.progress.Size = new System.Drawing.Size(748, 23);
+            this.progress.Size = new System.Drawing.Size(884, 23);
             this.progress.TabIndex = 24;
             // 
             // frmOperacoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 315);
+            this.ClientSize = new System.Drawing.Size(892, 315);
             this.Controls.Add(this.progress);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox2);
