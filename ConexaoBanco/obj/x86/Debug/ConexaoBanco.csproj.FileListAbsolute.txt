@@ -1,0 +1,13 @@
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\bin\x86\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\bin\x86\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\obj\x86\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\obj\x86\Debug\ConexaoBanco.pdb
+C:\Users\gustavo.giori\Downloads\DistribuiÃ§Ã£o Chamados\ConexaoBanco\bin\x86\Debug\ConexaoBanco.dll
+C:\Users\gustavo.giori\Downloads\DistribuiÃ§Ã£o Chamados\ConexaoBanco\bin\x86\Debug\ConexaoBanco.pdb
+C:\Users\gustavo.giori\Downloads\DistribuiÃ§Ã£o Chamados\ConexaoBanco\obj\x86\Debug\ConexaoBanco.dll
+C:\Users\gustavo.giori\Downloads\DistribuiÃ§Ã£o Chamados\ConexaoBanco\obj\x86\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\bin\x86\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\bin\x86\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\obj\x86\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\obj\x86\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Alerta distribuição\ConexaoBanco\obj\x86\Debug\ConexaoBanco.csprojResolveAssemblyReference.cache

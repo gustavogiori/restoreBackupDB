@@ -1,0 +1,23 @@
+C:\Users\Gustavo Giori\Documents\ManipulandoArquivos\ConexaoBanco\bin\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\Documents\ManipulandoArquivos\ConexaoBanco\bin\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\Documents\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\Documents\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\Documents\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.csprojResolveAssemblyReference.cache
+D:\importante\ManipulandoArquivos\ConexaoBanco\bin\Debug\ConexaoBanco.dll
+D:\importante\ManipulandoArquivos\ConexaoBanco\bin\Debug\ConexaoBanco.pdb
+D:\importante\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.csprojResolveAssemblyReference.cache
+D:\importante\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.dll
+D:\importante\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.pdb
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\bin\Debug\ConexaoBanco.dll
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\bin\Debug\ConexaoBanco.pdb
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.dll
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\obj\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\bin\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\bin\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\obj\Debug\ConexaoBanco.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\obj\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\Documents\Visual Studio 2013\Projects\Distribuição Chamados\ConexaoBanco\obj\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\bin\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\bin\Debug\ConexaoBanco.pdb
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\obj\Debug\ConexaoBanco.dll
+C:\Users\Gustavo Giori\documents\visual studio 2013\Projects\Alerta distribuição\ConexaoBanco\obj\Debug\ConexaoBanco.pdb

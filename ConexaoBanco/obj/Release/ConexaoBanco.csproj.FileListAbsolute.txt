@@ -1,0 +1,4 @@
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\bin\Release\ConexaoBanco.dll
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\bin\Release\ConexaoBanco.pdb
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\obj\Release\ConexaoBanco.dll
+E:\Pc Antigo\importante\ManipulandoArquivos\ConexaoBanco\obj\Release\ConexaoBanco.pdb

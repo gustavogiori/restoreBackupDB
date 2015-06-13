@@ -145,6 +145,40 @@ GRANT SELECT ON GSERVICO TO sysdba;
 GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
 GRANT SELECT,INSERT ON GDATALOG TO sysdba;
 ";
+            ConexaoBanco.ConexaoSQL.NomeServidor = srv.Name;
+            ConexaoBanco.ConexaoSQL.BaseDados = baseExecutar;
+
+
+            var testeretorno0 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@" SP_DROPUSER SYSDBA;
+ EXEC SP_CHANGEDBOWNER sa;
+
+");
+
+         var testeretorno=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+ IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'rm')
+   CREATE LOGIN rm WITH PASSWORD = 'rm',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english;
+");
+
+ var testeretorno2=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"EXEC SP_CHANGEDBOWNER rm;");
+
+ var testeretorno3=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
+   CREATE LOGIN sysdba WITH PASSWORD = 'masterkey',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english ;");
+ 
+ var testeretorno4=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"sp_adduser sysdba,sysdba;");
+ var testeretorno5=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+GRANT SELECT ON GPARAMS TO sysdba;
+GRANT SELECT , UPDATE ON GUSUARIO TO sysdba;
+GRANT SELECT ON GPERMIS  TO sysdba;
+GRANT SELECT ON GACESSO  TO sysdba;
+GRANT SELECT ON GSISTEMA  TO sysdba;
+GRANT SELECT ON GCOLIGADA  TO sysdba;
+GRANT SELECT ON GUSRPERFIL TO sysdba;
+GRANT SELECT ON GSERVICO TO sysdba;
+GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
+GRANT SELECT,INSERT ON GDATALOG TO sysdba;");
+
+/*
+         //   db.Script(script);
            var teste= db.ExecuteWithResults(parte1);
 
            var teste2 = db.ExecuteWithResults(parte2);
@@ -152,6 +186,7 @@ GRANT SELECT,INSERT ON GDATALOG TO sysdba;
             db.ExecuteWithResults(parte4);
             db.ExecuteWithResults(parte5);
             db.ExecuteWithResults(parte6);
+ */
 
           
         }
@@ -301,13 +336,15 @@ SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';";
 
                         //    db.Create();
 
+                            re_db.SqlVerify(srv);
 
                             re_db.Action = RestoreActionType.Database;
+                            re_db.ContinueAfterError = true;
                             re_db.Database = txtBase.Text; //cmbDatabase.SelectedItem.ToString();
                             BackupDeviceItem bk_item = new BackupDeviceItem(arquivo, DeviceType.File);
                             re_db.Devices.Add(bk_item);
                             re_db.ReplaceDatabase = true;
-
+                            
                             this.progressBar1.Value = 0;
                             this.progressBar1.Maximum = 100;
                             //this.progressBar1.Value = 10;

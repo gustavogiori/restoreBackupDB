@@ -67,3 +67,5 @@ C:\p_Backup\restoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.exe
 C:\p_Backup\restoreBackupDB\RestoreBackupDB\bin\Debug\RestoreBackupDB.pdb
 C:\p_Backup\restoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.exe.manifest
 C:\p_Backup\restoreBackupDB\RestoreBackupDB\obj\Debug\RestoreBackupDB.application
+C:\p_Backup\restoreBackupDB\RestoreBackupDB\bin\Debug\ConexaoBanco.dll
+C:\p_Backup\restoreBackupDB\RestoreBackupDB\bin\Debug\ConexaoBanco.pdb

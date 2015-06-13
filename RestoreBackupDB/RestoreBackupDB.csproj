@@ -156,6 +156,12 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConexaoBanco\ConexaoBanco.csproj">
+      <Project>{054afc41-f492-44aa-8c55-2abbd6de7164}</Project>
+      <Name>ConexaoBanco</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
