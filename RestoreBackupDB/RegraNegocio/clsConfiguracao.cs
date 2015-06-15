@@ -37,6 +37,10 @@ namespace RestoreBackupDB.RegraNegocio
                 AcertaUsuario2008(baseDados);
             }
 
+            else if (versaoBanco.Contains("Microsoft SQL Server 2008") || versao12 == true)
+            {
+                AcertaUsuario2012V12(baseDados);
+            }
             else if (versaoBanco.Contains("Microsoft SQL Server 2012") || versao12 == false)
             {
                 AcertaUsuario2012(baseDados);
@@ -187,6 +191,7 @@ GRANT SELECT,INSERT ON GDATALOG TO sysdba;");
 
             var testeretorno4 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"sp_adduser sysdba,sysdba;");
             var testeretorno5 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+
 GRANT SELECT ON GPARAMS TO sysdba;
 GRANT SELECT , UPDATE ON GUSUARIO TO sysdba;
 GRANT SELECT ON GPERMIS  TO sysdba;
@@ -196,13 +201,6 @@ GRANT SELECT ON GCOLIGADA  TO sysdba;
 GRANT SELECT ON GUSRPERFIL TO sysdba;
 GRANT SELECT ON GSERVICO TO sysdba;
 GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
-GRANT SELECT,INSERT ON GDATALOG TO sysdba;
-GRANT SELECT ON GMAILPARAMS TO sysdba;
-GRANT SELECT ON GUPGATUALIZACAO TO sysdba;
-GRANT SELECT,INSERT,DELETE,UPDATE ON GSESSAOFLUIG TO sysdba;
-GRANT SELECT,INSERT,DELETE,UPDATE ON GULTIMOCONTEXTOUSUARIO TO sysdba;
-SP_DEFAULTLANGUAGE 'RM','ENGLISH';
-SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';
 ");
         }
 
