@@ -101,50 +101,19 @@ GRANT SELECT ON GSERVICO TO sysdba;
 GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
 GRANT SELECT,INSERT ON GDATALOG TO sysdba;
 ";
-    var teste=        db.ExecuteWithResults(parte1);
+            var teste = db.ExecuteWithResults(parte1);
             db.ExecuteWithResults(parte2);
             db.ExecuteWithResults(parte3);
             db.ExecuteWithResults(parte4);
             db.ExecuteWithResults(parte5);
             db.ExecuteWithResults(parte6);
-          
+
         }
 
         public void AcertaUsuario2008(string baseExecutar)
         {
 
-            Database db = new Database(srv, baseExecutar);
 
-            string parte2 = @"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'rm')
-   CREATE LOGIN rm WITH PASSWORD = 'rm',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english";
-
-
-            string parte1= @"
- SP_DROPUSER SYSDBA;
- EXEC SP_CHANGEDBOWNER sa;
- 
-
-                                                  ";
-
-            string parte3 = @"
-EXEC SP_CHANGEDBOWNER rm
-";
-
-            string parte4 = @"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
-   CREATE LOGIN sysdba WITH PASSWORD = 'masterkey',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english ";
-            string parte5 = "sp_adduser sysdba,sysdba";
-
-            string parte6 = @"GRANT SELECT ON GPARAMS TO sysdba;
-GRANT SELECT , UPDATE ON GUSUARIO TO sysdba;
-GRANT SELECT ON GPERMIS  TO sysdba;
-GRANT SELECT ON GACESSO  TO sysdba;
-GRANT SELECT ON GSISTEMA  TO sysdba;
-GRANT SELECT ON GCOLIGADA  TO sysdba;
-GRANT SELECT ON GUSRPERFIL TO sysdba;
-GRANT SELECT ON GSERVICO TO sysdba;
-GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
-GRANT SELECT,INSERT ON GDATALOG TO sysdba;
-";
             ConexaoBanco.ConexaoSQL.NomeServidor = srv.Name;
             ConexaoBanco.ConexaoSQL.BaseDados = baseExecutar;
 
@@ -154,18 +123,18 @@ GRANT SELECT,INSERT ON GDATALOG TO sysdba;
 
 ");
 
-         var testeretorno=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+            var testeretorno = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
  IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'rm')
    CREATE LOGIN rm WITH PASSWORD = 'rm',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english;
 ");
 
- var testeretorno2=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"EXEC SP_CHANGEDBOWNER rm;");
+            var testeretorno2 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"EXEC SP_CHANGEDBOWNER rm;");
 
- var testeretorno3=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
+            var testeretorno3 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
    CREATE LOGIN sysdba WITH PASSWORD = 'masterkey',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english ;");
- 
- var testeretorno4=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"sp_adduser sysdba,sysdba;");
- var testeretorno5=   ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+
+            var testeretorno4 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"sp_adduser sysdba,sysdba;");
+            var testeretorno5 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
 GRANT SELECT ON GPARAMS TO sysdba;
 GRANT SELECT , UPDATE ON GUSUARIO TO sysdba;
 GRANT SELECT ON GPERMIS  TO sysdba;
@@ -177,18 +146,18 @@ GRANT SELECT ON GSERVICO TO sysdba;
 GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
 GRANT SELECT,INSERT ON GDATALOG TO sysdba;");
 
-/*
-         //   db.Script(script);
-           var teste= db.ExecuteWithResults(parte1);
+            /*
+                     //   db.Script(script);
+                       var teste= db.ExecuteWithResults(parte1);
 
-           var teste2 = db.ExecuteWithResults(parte2);
-            db.ExecuteWithResults(parte3);
-            db.ExecuteWithResults(parte4);
-            db.ExecuteWithResults(parte5);
-            db.ExecuteWithResults(parte6);
- */
+                       var teste2 = db.ExecuteWithResults(parte2);
+                        db.ExecuteWithResults(parte3);
+                        db.ExecuteWithResults(parte4);
+                        db.ExecuteWithResults(parte5);
+                        db.ExecuteWithResults(parte6);
+             */
 
-          
+
         }
 
 
@@ -196,72 +165,29 @@ GRANT SELECT,INSERT ON GDATALOG TO sysdba;");
         public void AcertaUsuario2012(string baseExecutar)
         {
 
-            Database db = new Database(srv, baseExecutar);
 
-            string parte2 = @"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'rm')
-   CREATE LOGIN rm WITH PASSWORD = 'rm',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english";
+            ConexaoBanco.ConexaoSQL.NomeServidor = srv.Name;
+            ConexaoBanco.ConexaoSQL.BaseDados = baseExecutar;
 
 
-            string parte1 = @"
- SP_DROPUSER SYSDBA;
+            var testeretorno0 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@" SP_DROPUSER SYSDBA;
  EXEC SP_CHANGEDBOWNER sa;
- 
 
-                                                  ";
+");
 
-            string parte3 = @"
-EXEC SP_CHANGEDBOWNER rm
-";
+            var testeretorno = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+ IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'rm')
+   CREATE LOGIN rm WITH PASSWORD = 'rm',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english;
+");
 
-            string parte4 = @"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
-   CREATE LOGIN sysdba WITH PASSWORD = 'masterkey',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english ";
-            string parte5 = "sp_adduser sysdba,sysdba";
+            var testeretorno2 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"EXEC SP_CHANGEDBOWNER rm;");
 
-            string parte6 = @"GRANT SELECT ON GPARAMS TO sysdba;
-GRANT SELECT , UPDATE ON GUSUARIO TO sysdba;
-GRANT SELECT ON GPERMIS  TO sysdba;
-GRANT SELECT ON GACESSO  TO sysdba;
-GRANT SELECT ON GSISTEMA  TO sysdba;
-GRANT SELECT ON GCOLIGADA  TO sysdba;
-GRANT SELECT ON GUSRPERFIL TO sysdba;
-GRANT SELECT ON GSERVICO TO sysdba;
-GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
-";
-            db.ExecuteWithResults(parte1);
-            db.ExecuteWithResults(parte2);
-            db.ExecuteWithResults(parte3);
-            db.ExecuteWithResults(parte4);
-            db.ExecuteWithResults(parte5);
-            db.ExecuteWithResults(parte6);
-        }
+            var testeretorno3 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
+   CREATE LOGIN sysdba WITH PASSWORD = 'masterkey',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english ;");
 
-
-
-        public void AcertaUsuario2012V12(string baseExecutar)
-        {
-
-            Database db = new Database(srv, baseExecutar);
-
-            string parte2 = @"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'rm')
-   CREATE LOGIN rm WITH PASSWORD = 'rm',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english";
-
-
-            string parte1 = @"
- SP_DROPUSER SYSDBA;
- EXEC SP_CHANGEDBOWNER sa;
- 
-
-                                                  ";
-
-            string parte3 = @"
-EXEC SP_CHANGEDBOWNER rm
-";
-
-            string parte4 = @"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
-   CREATE LOGIN sysdba WITH PASSWORD = 'masterkey',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english ";
-            string parte5 = "sp_adduser sysdba,sysdba";
-
-            string parte6 = @"GRANT SELECT ON GPARAMS TO sysdba;
+            var testeretorno4 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"sp_adduser sysdba,sysdba;");
+            var testeretorno5 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+GRANT SELECT ON GPARAMS TO sysdba;
 GRANT SELECT , UPDATE ON GUSUARIO TO sysdba;
 GRANT SELECT ON GPERMIS  TO sysdba;
 GRANT SELECT ON GACESSO  TO sysdba;
@@ -275,27 +201,64 @@ GRANT SELECT ON GMAILPARAMS TO sysdba;
 GRANT SELECT ON GUPGATUALIZACAO TO sysdba;
 GRANT SELECT,INSERT,DELETE,UPDATE ON GSESSAOFLUIG TO sysdba;
 GRANT SELECT,INSERT,DELETE,UPDATE ON GULTIMOCONTEXTOUSUARIO TO sysdba;
-";
-
-            string parte7 = @"
 SP_DEFAULTLANGUAGE 'RM','ENGLISH';
-SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';";
-            db.ExecuteWithResults(parte1);
-            db.ExecuteWithResults(parte2);
-            db.ExecuteWithResults(parte3);
-            db.ExecuteWithResults(parte4);
-            db.ExecuteWithResults(parte5);
-            db.ExecuteWithResults(parte6);
-            db.ExecuteWithResults(parte7);
+SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';
+");
+        }
+
+
+
+        public void AcertaUsuario2012V12(string baseExecutar)
+        {
+
+
+            ConexaoBanco.ConexaoSQL.NomeServidor = srv.Name;
+            ConexaoBanco.ConexaoSQL.BaseDados = baseExecutar;
+
+
+            var testeretorno0 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@" SP_DROPUSER SYSDBA;
+ EXEC SP_CHANGEDBOWNER sa;
+
+");
+
+            var testeretorno = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+ IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'rm')
+   CREATE LOGIN rm WITH PASSWORD = 'rm',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english;
+");
+
+            var testeretorno2 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"EXEC SP_CHANGEDBOWNER rm;");
+
+            var testeretorno3 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"IF NOT EXISTS(SELECT * FROM MASTER.DBO.SYSLOGINS WHERE NAME = 'sysdba')
+   CREATE LOGIN sysdba WITH PASSWORD = 'masterkey',CHECK_POLICY=OFF,DEFAULT_LANGUAGE = us_english ;");
+
+            var testeretorno4 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"sp_adduser sysdba,sysdba;");
+            var testeretorno5 = ConexaoBanco.ConexaoSQL.retornarRegistrosDataSet(@"
+GRANT SELECT ON GPARAMS TO sysdba;
+GRANT SELECT , UPDATE ON GUSUARIO TO sysdba;
+GRANT SELECT ON GPERMIS  TO sysdba;
+GRANT SELECT ON GACESSO  TO sysdba;
+GRANT SELECT ON GSISTEMA  TO sysdba;
+GRANT SELECT ON GCOLIGADA  TO sysdba;
+GRANT SELECT ON GUSRPERFIL TO sysdba;
+GRANT SELECT ON GSERVICO TO sysdba;
+GRANT SELECT ON GPARAMETROSSISTEMA TO sysdba;
+GRANT SELECT,INSERT ON GDATALOG TO sysdba;
+GRANT SELECT ON GMAILPARAMS TO sysdba;
+GRANT SELECT ON GUPGATUALIZACAO TO sysdba;
+GRANT SELECT,INSERT,DELETE,UPDATE ON GSESSAOFLUIG TO sysdba;
+GRANT SELECT,INSERT,DELETE,UPDATE ON GULTIMOCONTEXTOUSUARIO TO sysdba;
+SP_DEFAULTLANGUAGE 'RM','ENGLISH';
+SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';
+");
         }
 
         public bool verficarBaseExiste(string baseDados)
         {
 
-            bool existe=false;
+            bool existe = false;
             try
             {
-                
+
                 Database db = new Database(srv, baseDados);
                 db.Create();
                 existe = false;
@@ -309,7 +272,7 @@ SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';";
             return existe;
         }
 
-        public void realizarRestauracao(ProgressBar process, TextBox txtBase, string arquivo, Label lbl, Form frm,CheckBox checkAcertaUsuario,CheckBox checkVersao12)
+        public void realizarRestauracao(ProgressBar process, TextBox txtBase, string arquivo, Label lbl, Form frm, CheckBox checkAcertaUsuario, CheckBox checkVersao12)
         {
             //
             this.progressBar1 = process;
@@ -329,12 +292,12 @@ SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';";
                     {
                         if (arquivo != string.Empty)
                         {
-                         //   Database db = new Database(srv, txtBase.Text);
+                            //   Database db = new Database(srv, txtBase.Text);
 
                             Restore re_db = new Restore();
 
 
-                        //    db.Create();
+                            //    db.Create();
 
                             re_db.SqlVerify(srv);
 
@@ -344,7 +307,7 @@ SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';";
                             BackupDeviceItem bk_item = new BackupDeviceItem(arquivo, DeviceType.File);
                             re_db.Devices.Add(bk_item);
                             re_db.ReplaceDatabase = true;
-                            
+
                             this.progressBar1.Value = 0;
                             this.progressBar1.Maximum = 100;
                             //this.progressBar1.Value = 10;
@@ -438,7 +401,7 @@ SP_DEFAULTLANGUAGE 'SYSDBA','ENGLISH';";
         public void listarBases(ComboBox cbBases)
         {
 
-           cbBases.Items.Clear();
+            cbBases.Items.Clear();
 
             foreach (Database db in srv.Databases)
             {
